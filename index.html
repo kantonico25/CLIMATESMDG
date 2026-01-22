@@ -8,6 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
@@ -31,6 +34,28 @@
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#048180',
+                            yellow: '#F3CB03',
+                            coral: '#F78181',
+                            gray: '#d9d9d9',
+                            dark: '#1a202c',
+                            light: '#f7fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Arimo', 'sans-serif'],
+                        heading: ['Arimo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     
 </head>
 <body class="font-sans antialiased text-gray-900">
@@ -156,8 +181,8 @@
                     <h4 class="font-bold mb-3">Vision</h4>
                     <p class="text-xs text-gray-500">Développer l'agilité des acteurs et innover pour la résilience communautaire</p>
                 </div>
-                <div class="bg-teal-900 text-white p-8 rounded-2xl shadow-md">
-                    <h4 class="font-bold border-b border-teal-700 pb-2 mb-4 text-center">Nos Valeurs</h4>
+                <div class="bg-teal-600 text-white p-8 rounded-2xl shadow-md">
+                    <h4 class="font-bold border-b border-white-600 pb-2 mb-4 text-center">Nos Valeurs</h4>
                     <ul class="text-sm space-y-3">
                         <li class="flex items-center"><i class="fa-solid fa-lightbulb text-yellow-400 mr-3"></i> INNOVATION</li>
                         <li class="flex items-center"><i class="fa-solid fa-leaf text-yellow-400 mr-3"></i> DURABILITÉ</li>
