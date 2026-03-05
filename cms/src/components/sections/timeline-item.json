@@ -1,0 +1,42 @@
+﻿{
+  "collectionName": "components_sections_timeline_items",
+  "info": {
+    "displayName": "Timeline Item",
+    "icon": "clock"
+  },
+  "attributes": {
+    "period": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "impactTitle": {
+      "type": "string"
+    },
+    "impactText": {
+      "type": "text"
+    },
+    "extraNotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.timeline-note"
+    },
+    "side": {
+      "type": "enumeration",
+      "enum": ["left", "right"],
+      "default": "right"
+    },
+    "markerColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    }
+  }
+}
+

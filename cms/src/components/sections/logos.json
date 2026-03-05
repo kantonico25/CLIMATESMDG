@@ -1,0 +1,18 @@
+﻿{
+  "collectionName": "components_sections_logos",
+  "info": {
+    "displayName": "Logos",
+    "icon": "grid"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}
+

@@ -1,0 +1,121 @@
+﻿{
+  "collectionName": "components_sections_team_pages",
+  "info": {
+    "displayName": "Team Page",
+    "icon": "users"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "heroCtaLabel": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "heroCardEyebrow": {
+      "type": "string"
+    },
+    "heroCardTitle": {
+      "type": "string"
+    },
+    "heroCardText": {
+      "type": "text"
+    },
+    "organizationTitle": {
+      "type": "string"
+    },
+    "organizationAccent": {
+      "type": "string"
+    },
+    "organizationSubtitle": {
+      "type": "text"
+    },
+    "orgDirectorLabel": {
+      "type": "string"
+    },
+    "orgDirectorTone": {
+      "type": "enumeration",
+      "enum": ["outline", "teal", "yellow", "orange"],
+      "default": "teal"
+    },
+    "orgBranches": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-org-branch"
+    },
+    "organizationImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "executiveTitle": {
+      "type": "string"
+    },
+    "executiveAccent": {
+      "type": "string"
+    },
+    "executiveSubtitle": {
+      "type": "text"
+    },
+    "executiveMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-member"
+    },
+    "boardTitle": {
+      "type": "string"
+    },
+    "boardAccent": {
+      "type": "string"
+    },
+    "boardSubtitle": {
+      "type": "text"
+    },
+    "boardMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-member"
+    },
+    "joinTitle": {
+      "type": "string"
+    },
+    "joinText": {
+      "type": "text"
+    },
+    "joinPrimaryLabel": {
+      "type": "string"
+    },
+    "joinPrimaryUrl": {
+      "type": "string"
+    },
+    "joinSecondaryLabel": {
+      "type": "string"
+    },
+    "joinSecondaryUrl": {
+      "type": "string"
+    },
+    "joinImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
+

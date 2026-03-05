@@ -1,0 +1,16 @@
+﻿{
+  "collectionName": "components_sections_team_stats",
+  "info": {
+    "displayName": "Team Stat",
+    "icon": "chartPie"
+  },
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}
+

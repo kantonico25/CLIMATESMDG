@@ -1,0 +1,16 @@
+﻿{
+  "collectionName": "components_sections_mission_values",
+  "info": {
+    "displayName": "Mission Value",
+    "icon": "spark"
+  },
+  "attributes": {
+    "iconName": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}
+

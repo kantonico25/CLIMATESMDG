@@ -1,0 +1,32 @@
+﻿{
+  "collectionName": "components_sections_articles",
+  "info": {
+    "displayName": "Articles",
+    "icon": "list"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 3
+    },
+    "categorySlug": {
+      "type": "string"
+    },
+    "tagSlug": {
+      "type": "string"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonUrl": {
+      "type": "string"
+    }
+  }
+}
+

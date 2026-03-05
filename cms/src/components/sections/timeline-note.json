@@ -1,0 +1,13 @@
+﻿{
+  "collectionName": "components_sections_timeline_notes",
+  "info": {
+    "displayName": "Timeline Note",
+    "icon": "bulletList"
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
+

@@ -1,0 +1,51 @@
+﻿{
+  "collectionName": "components_sections_project_galleries",
+  "info": {
+    "displayName": "Project Gallery",
+    "icon": "layout"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleAccent": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "filters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.project-gallery-filter"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6,
+      "min": 1
+    },
+    "initialVisible": {
+      "type": "integer",
+      "default": 6,
+      "min": 1
+    },
+    "loadMoreLabel": {
+      "type": "string",
+      "default": "Charger plus de projets"
+    },
+    "emptyStateText": {
+      "type": "string",
+      "default": "Aucun projet dans cette categorie."
+    }
+  }
+}
+

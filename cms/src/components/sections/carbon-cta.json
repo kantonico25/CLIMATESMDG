@@ -1,0 +1,26 @@
+﻿{
+  "collectionName": "components_sections_carbon_ctas",
+  "info": {
+    "displayName": "Carbon Footprint CTA",
+    "icon": "leaf"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Calculer votre empreinte carbone"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Estimez votre impact en quelques minutes et découvrez des pistes concrètes pour le réduire."
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Lancer le calculateur"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "/carbon-footprint"
+    }
+  }
+}
+

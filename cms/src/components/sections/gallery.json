@@ -1,0 +1,23 @@
+﻿{
+  "collectionName": "components_sections_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "grid"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6,
+      "min": 1
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.gallery-item"
+    }
+  }
+}
+

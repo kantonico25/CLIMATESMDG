@@ -1,0 +1,65 @@
+﻿{
+  "collectionName": "components_sections_missions",
+  "info": {
+    "displayName": "Mission",
+    "icon": "check"
+  },
+  "attributes": {
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsAccent": {
+      "type": "string"
+    },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.mission-pillar"
+    },
+    "valuesTitle": {
+      "type": "string"
+    },
+    "valuesPopupTitle": {
+      "type": "string"
+    },
+    "valuesPopupContent": {
+      "type": "richtext"
+    },
+    "valuesPopupTheme": {
+      "type": "enumeration",
+      "enum": [
+        "growth",
+        "horizon",
+        "mosaic",
+        "blueprint",
+        "ripple",
+        "discovery"
+      ]
+    },
+    "valuesPopupBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "valuesPopupOverlayColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.mission-value"
+    },
+    "axesTitle": {
+      "type": "string"
+    },
+    "axes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.mission-axis"
+    }
+  }
+}
+

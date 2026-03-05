@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["ES2021"],
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false
+  },
+  "include": ["config/**/*.js", "src/**/*.js", "database/**/*.js", "index.js"],
+  "exclude": ["node_modules", ".tmp", ".cache", "build", "dist", "src/admin", "**/*.test.js"]
+}

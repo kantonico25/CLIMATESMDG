@@ -1,0 +1,30 @@
+﻿{
+  "collectionName": "components_sections_podcasts",
+  "info": {
+    "displayName": "Podcast",
+    "icon": "microphone"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleAccent": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonUrl": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.podcast-item"
+    }
+  }
+}
+

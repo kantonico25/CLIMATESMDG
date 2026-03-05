@@ -1,0 +1,45 @@
+﻿{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "email"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "infoTitle": {
+      "type": "string"
+    },
+    "infoText": {
+      "type": "text"
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.contact-item"
+    },
+    "formTitle": {
+      "type": "string"
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonUrl": {
+      "type": "string"
+    }
+  }
+}
+

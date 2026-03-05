@@ -1,32 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climates - Madagascar</title>
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/generated/hero-1200.avif"
-      imagesrcset="/src/assets/generated/hero-1200.avif 1200w, /src/assets/generated/hero-1800.avif 1800w"
-      imagesizes="100vw"
-      type="image/avif"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/generated/hero-1200.webp"
-      imagesrcset="/src/assets/generated/hero-1200.webp 1200w, /src/assets/generated/hero-1800.webp 1800w"
-      imagesizes="100vw"
-      type="image/webp"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<<<<<<< Updated upstream
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
@@ -34,44 +15,22 @@
             background-size: cover;
             background-position: top;
         }
-        .text-accent { color: #facc15; } /* Yellow from image */
-        .bg-teal-custom { background-color: #0d8a8a; } /* Teal from button */
-        /* Prevent a "flash" of content before GSAP loads */
+        .text-accent { color: #facc15; }
+        .bg-teal-custom { background-color: #0d8a8a; }
         .reveal { opacity: 0; transform: translateY(50px); }
         .logo {
             height: 60px;
         }
-        #team {
+        #team-image {
             filter: brightness(50%);
         }
+        
     </style>
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            teal: '#048180',
-                            yellow: '#F3CB03',
-                            coral: '#F78181',
-                            gray: '#d9d9d9',
-                            dark: '#1a202c',
-                            light: '#f7fafc',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Arimo', 'sans-serif'],
-                        heading: ['Arimo', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
     
 </head>
 <body class="font-sans antialiased text-gray-900">
@@ -84,11 +43,12 @@
         </div>
 
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
-            <a href="#" class="hover:text-teal-700 transition">À propos</a>
-            <a href="#" class="hover:text-teal-700 transition">Mission</a>
-            <a href="#" class="hover:text-teal-700 transition">Équipe</a>
-            <a href="#" class="hover:text-teal-700 transition">Projet</a>
-            <a href="#" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Contact</a>
+            <a href="#about" class="hover:text-teal-700 transition">À propos</a>
+            <a href="#mission" class="hover:text-teal-700 transition">Missions</a>
+            <a href="#team" class="hover:text-teal-700 transition">Équipes</a>
+            <a href="#projects" class="hover:text-teal-700 transition">Projets</a>
+            <a href="#gallery" class="hover:text-teal-700 transition">Galerie</a>
+            <a href="#contact" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Contact</a>
         </div>
 
         <div class="hidden lg:flex items-center text-gray-600 text-sm">
@@ -96,10 +56,25 @@
             <span>+261 34 91 259 59</span>
         </div>
 
-        <button class="md:hidden text-2xl" id="menu-btn">
+        <button class="md:hidden text-2xl" id="menu-btn" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Toggle menu</span>
             <i class="fa-solid fa-bars"></i>
         </button>
     </nav>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-sm">
+        <div class="px-6 py-4 space-y-4 text-sm font-medium text-gray-700">
+            <a href="#about" class="block hover:text-teal-700 transition">À propos</a>
+            <a href="#mission" class="block hover:text-teal-700 transition">Missions</a>
+            <a href="#team" class="block hover:text-teal-700 transition">Équipes</a>
+            <a href="#projects" class="block hover:text-teal-700 transition">Projets</a>
+            <a href="#contact" class="block bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition w-fit">Contact</a>
+            <div class="flex items-center text-gray-600 text-sm pt-2">
+                <i class="fa-solid fa-phone mr-2 text-pink-400"></i>
+                <span>+261 34 91 259 59</span>
+            </div>
+        </div>
+    </div>
 
     <section class="hero-bg min-h-[85vh] flex items-center justify-center text-center px-4 relative">
         <div class="max-w-4xl">
@@ -124,12 +99,22 @@
 
     <script>
         const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
         btn.addEventListener('click', () => {
-            alert('Mobile menu toggled (demo only)');
+            const isHidden = menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', String(!isHidden));
+        });
+
+        menu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+            });
         });
     </script>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto">
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         <div>
@@ -160,7 +145,7 @@
 
         <div class="relative">
             <div class="rounded-3xl overflow-hidden shadow-2xl relative">
-                <img src="./assets/images/image (1).webp" id="team" alt="Team meeting" class="w-full h-[400px] object-cover">
+                <img src="./assets/images/image (1).webp" id="team-image" alt="Team meeting" class="w-full h-[400px] object-cover">
                 
                 <div class="absolute bottom-6 left-6 text-white">
                     <h4 class="text-xl font-bold">Une Présence Internationale</h4>
@@ -179,7 +164,7 @@
     </section>
     
 
-    <section class="py-16 bg-slate-50 px-6">
+    <section id="mission" class="py-16 bg-slate-50 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold">Nos <span class="text-teal-600">Piliers & Valeurs</span></h2>
@@ -197,8 +182,8 @@
                     <h4 class="font-bold mb-3">Vision</h4>
                     <p class="text-xs text-gray-500">Développer l'agilité des acteurs et innover pour la résilience communautaire</p>
                 </div>
-                <div class="bg-teal-600 text-white p-8 rounded-2xl shadow-md">
-                    <h4 class="font-bold border-b border-white-600 pb-2 mb-4 text-center">Nos Valeurs</h4>
+                <div class="bg-teal-900 text-white p-8 rounded-2xl shadow-md">
+                    <h4 class="font-bold border-b border-teal-700 pb-2 mb-4 text-center">Nos Valeurs</h4>
                     <ul class="text-sm space-y-3">
                         <li class="flex items-center"><i class="fa-solid fa-lightbulb text-yellow-400 mr-3"></i> INNOVATION</li>
                         <li class="flex items-center"><i class="fa-solid fa-leaf text-yellow-400 mr-3"></i> DURABILITÉ</li>
@@ -235,7 +220,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#008282] py-16 px-6 text-white text-center">
+    <section id="team" class="bg-[#008282] py-16 px-6 text-white text-center">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-12">L'équipe & Notre Impact</h2>
 
@@ -274,7 +259,7 @@
         </div>
     </div>
     </section>
-    <section class="py-20 bg-white px-6">
+    <section id="projects" class="py-20 bg-white px-6">
     <div class="max-w-5xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold">Nos <span class="text-teal-600">Réalisations & Impacts</span></h2>
@@ -348,7 +333,7 @@
         </div>
     </div>
     </section>
-    <section class="py-20 bg-white px-6">
+    <section class="py-20 bg-white px-6" id="gallery">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-[#006666]">Galerie de projets</h2>
@@ -389,7 +374,7 @@
             </div>
 
             <div class="group relative rounded-[2.5rem] overflow-hidden shadow-lg h-64 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163" alt="Conseil Municipal" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <img src="./assets/images/image 6.webp" alt="Conseil Municipal" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
                     <span class="text-yellow-400 font-bold text-xs uppercase mb-1">Simulation</span>
                     <h4 class="text-white text-xl font-bold leading-tight">Conseil Municipal Écologique</h4>
@@ -400,7 +385,7 @@
         </div>
     </div>
     </section>
-    <footer class="bg-[#008282] text-white pt-16 pb-8 px-6">
+    <footer id="contact" class="bg-[#008282] text-white pt-16 pb-8 px-6">
     <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
             
@@ -435,10 +420,10 @@
             <div>
                 <h4 class="text-yellow-400 font-bold uppercase mb-6 tracking-wider">Liens Rapide</h4>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="#" class="hover:underline opacity-90">À propos</a></li>
-                    <li><a href="#" class="hover:underline opacity-90">Mission</a></li>
-                    <li><a href="#" class="hover:underline opacity-90">Équipe</a></li>
-                    <li><a href="#" class="hover:underline opacity-90">Projet</a></li>
+                    <li><a href="#about" class="hover:underline opacity-90">À propos</a></li>
+                    <li><a href="#mission" class="hover:underline opacity-90">Mission</a></li>
+                    <li><a href="#team" class="hover:underline opacity-90">Équipe</a></li>
+                    <li><a href="#projects" class="hover:underline opacity-90">Projet</a></li>
                 </ul>
             </div>
 
@@ -460,14 +445,12 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
     <script>
-        // --- STEP 1: Initialize Lenis Smooth Scroll ---
         const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Clean easing function
             smoothWheel: true
         });
 
-        // Synchronize Lenis with GSAP's ScrollTrigger
         lenis.on('scroll', ScrollTrigger.update);
 
         gsap.ticker.add((time) => {
@@ -476,10 +459,8 @@
 
         gsap.ticker.lagSmoothing(0);
 
-        // --- STEP 2: GSAP Reveal Animations ---
         gsap.registerPlugin(ScrollTrigger);
 
-        // Animate sections sliding up
         const sections = document.querySelectorAll('section, footer');
         sections.forEach((section) => {
             gsap.fromTo(section, 
@@ -498,11 +479,10 @@
             );
         });
 
-        // Animate cards with a "stagger" effect (one by one)
         const cardGrids = [
-            '.grid-cols-1.md\\:grid-cols-3 > div', // Pillars & Values
-            '.grid-cols-2.md\\:grid-cols-5 > div', // Impact Stats
-            '.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3 > div' // Project Gallery
+            '.grid-cols-1.md\\:grid-cols-3 > div', 
+            '.grid-cols-2.md\\:grid-cols-5 > div', 
+            '.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3 > div' 
         ];
 
         cardGrids.forEach(selector => {
@@ -522,23 +502,22 @@
             }
         });
 
-        // --- STEP 3: Handle Internal Links (Optional) ---
-        // Make anchor links scroll smoothly using Lenis
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    lenis.scrollTo(target);
+                    const nav = document.querySelector('nav');
+                    const offset = (nav ? nav.offsetHeight : 0) + 24;
+                    lenis.scrollTo(target, { offset: -offset });
                 }
             });
         });
-        // --- STEP 4: Back to Top Logic ---
         const backToTopBtn = document.getElementById('back-to-top');
 
-        // Show/Hide button based on scroll position (show after 500px)
+   
         ScrollTrigger.create({
-            start: 'top -500', // Trigger when top of page is 500px up
+            start: 'top -500', 
             onUpdate: (self) => {
                 if (self.isActive) {
                     gsap.to(backToTopBtn, { opacity: 1, visibility: 'visible', duration: 0.3 });
@@ -548,21 +527,9 @@
             }
         });
 
-        // Click event: Scroll back to top using Lenis
         backToTopBtn.addEventListener('click', () => {
-            lenis.scrollTo(0, { duration: 1.5 }); // Smoothly scroll to top
+            lenis.scrollTo(0, { duration: 1.5 });
         });
     </script>
 </body>
 </html>
-=======
-    <link rel="preload" as="font" type="font/woff2" href="/src/assets/fonts/Arimo-400-normal-subset.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/src/assets/fonts/Arimo-700-normal-subset.woff2" crossorigin>
-    <link href="./src/style.css" rel="stylesheet"/>
-  </head>
-  <body class="font-sans antialiased text-gray-900">
-    <div id="app"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
->>>>>>> Stashed changes

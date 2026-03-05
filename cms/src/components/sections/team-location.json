@@ -1,0 +1,13 @@
+﻿{
+  "collectionName": "components_sections_team_locations",
+  "info": {
+    "displayName": "Team Location",
+    "icon": "map-pin"
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}
+

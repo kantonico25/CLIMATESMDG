@@ -1,0 +1,54 @@
+﻿{
+  "collectionName": "components_sections_mission_axes",
+  "info": {
+    "displayName": "Mission Axis",
+    "icon": "apps"
+  },
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "badgeColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "popupTitle": {
+      "type": "string"
+    },
+    "popupContent": {
+      "type": "richtext"
+    },
+    "popupTheme": {
+      "type": "enumeration",
+      "enum": [
+        "growth",
+        "horizon",
+        "mosaic",
+        "blueprint",
+        "ripple",
+        "discovery"
+      ]
+    },
+    "popupBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "popupOverlayColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    }
+  }
+}
+

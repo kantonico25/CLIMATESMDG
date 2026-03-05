@@ -1,0 +1,22 @@
+﻿{
+  "collectionName": "components_sections_country_tags",
+  "info": {
+    "displayName": "Country Tag",
+    "icon": "pin"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "isHighlighted": {
+      "type": "boolean",
+      "default": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
+
+

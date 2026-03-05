@@ -1,0 +1,50 @@
+﻿{
+  "collectionName": "components_sections_teams",
+  "info": {
+    "displayName": "Team",
+    "icon": "user"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-stat"
+    },
+    "note": {
+      "type": "text"
+    },
+    "locations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-location"
+    },
+    "textColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "titleColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "mutedTextColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "locationTextColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "statLabelColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "statValueColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    }
+  }
+}
+

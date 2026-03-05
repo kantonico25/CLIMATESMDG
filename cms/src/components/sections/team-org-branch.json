@@ -1,0 +1,24 @@
+﻿{
+  "collectionName": "components_sections_team_org_branches",
+  "info": {
+    "displayName": "Team Org Branch",
+    "icon": "connector"
+  },
+  "attributes": {
+    "leadLabel": {
+      "type": "string",
+      "required": true
+    },
+    "leadTone": {
+      "type": "enumeration",
+      "enum": ["outline", "teal", "yellow", "orange"],
+      "default": "outline"
+    },
+    "roles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.team-org-role"
+    }
+  }
+}
+

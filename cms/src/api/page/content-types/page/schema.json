@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero",
+        "sections.features",
+        "sections.logos",
+        "sections.testimonials",
+        "sections.faq",
+        "sections.cta",
+        "sections.rich-text",
+        "sections.about",
+        "sections.mission",
+        "sections.team",
+        "sections.team-page",
+        "sections.projects",
+        "sections.gallery",
+        "sections.project-gallery",
+        "sections.articles",
+        "sections.podcast",
+        "sections.contact",
+        "sections.carbon-predictor",
+        "sections.carbon-cta"
+      ]
+    }
+  }
+}
