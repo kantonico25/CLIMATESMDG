@@ -1,0 +1,19 @@
+﻿{
+  "collectionName": "components_sections_team_org_roles",
+  "info": {
+    "displayName": "Team Org Role",
+    "icon": "bulletList"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "tone": {
+      "type": "enumeration",
+      "enum": ["outline", "teal", "yellow", "orange"],
+      "default": "outline"
+    }
+  }
+}
+

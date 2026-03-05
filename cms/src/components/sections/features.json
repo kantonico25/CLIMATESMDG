@@ -1,0 +1,21 @@
+﻿{
+  "collectionName": "components_sections_features",
+  "info": {
+    "displayName": "Features",
+    "icon": "apps"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.feature-item"
+    }
+  }
+}
+

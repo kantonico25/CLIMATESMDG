@@ -1,0 +1,18 @@
+﻿{
+  "collectionName": "components_sections_projects",
+  "info": {
+    "displayName": "Projects Timeline",
+    "icon": "calendar"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.timeline-item"
+    }
+  }
+}
+

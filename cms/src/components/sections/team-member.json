@@ -1,0 +1,31 @@
+﻿{
+  "collectionName": "components_sections_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "icon": "user"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "email": {
+      "type": "string"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    }
+  }
+}
+

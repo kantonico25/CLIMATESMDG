@@ -1,0 +1,38 @@
+﻿{
+  "collectionName": "components_sections_carbon_predictors",
+  "info": {
+    "displayName": "Carbon Predictor",
+    "icon": "leaf"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "EcoTrack AI"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Fill in your lifestyle data to predict your carbon footprint."
+    },
+    "loadingTitle": {
+      "type": "string",
+      "default": "AI is Analyzing..."
+    },
+    "loadingSubtitle": {
+      "type": "text",
+      "default": "Correlating 19 variables with carbon databases."
+    },
+    "resultTitle": {
+      "type": "string",
+      "default": "Your Predicted Emission"
+    },
+    "resultSubtitle": {
+      "type": "text",
+      "default": "Your footprint is 15% lower than the regional average. Your choice of a vegan diet is your strongest eco-contributor."
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Recalculate"
+    }
+  }
+}
+

@@ -1,0 +1,28 @@
+﻿{
+  "collectionName": "components_sections_gallery_items",
+  "info": {
+    "displayName": "Gallery Item",
+    "icon": "picture"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "tagColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
+

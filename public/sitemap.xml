@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:5173</loc>
+    <lastmod>2026-02-01T07:43:38.031Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5173/contact</loc>
+    <lastmod>2026-02-01T07:43:38.031Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5173/articles/mobilisation-jeunesse</loc>
+    <lastmod>2026-02-01T07:43:38.031Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5173/articles/plaidoyer-climatique</loc>
+    <lastmod>2026-02-01T07:43:38.031Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5173/articles/recherche-inclusive</loc>
+    <lastmod>2026-02-01T07:43:38.031Z</lastmod>
+  </url>
+</urlset>

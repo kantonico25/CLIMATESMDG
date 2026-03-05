@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-03-02T21:32:14.675Z",
+  "url": "http://127.0.0.1:4173/",
+  "config": {
+    "runs": 3,
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2.625
+    }
+  },
+  "baselineMedian": {
+    "performance": 91,
+    "fcp": 2694.5526,
+    "lcp": 2715.7177999999994,
+    "cls": 0.00008823184726568102,
+    "tbt": 0,
+    "si": 3077.68029999631
+  },
+  "thresholds": {
+    "performanceMin": 88,
+    "fcpMax": 2944.5526,
+    "lcpMax": 2965.7177999999994,
+    "clsMax": 0.020088231847265683,
+    "tbtMax": 50,
+    "siMax": 3377.68029999631
+  }
+}

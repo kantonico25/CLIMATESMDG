@@ -1,0 +1,50 @@
+﻿{
+  "collectionName": "components_sections_podcast_items",
+  "info": {
+    "displayName": "Podcast Item",
+    "icon": "headphone"
+  },
+  "attributes": {
+    "episodeLabel": {
+      "type": "string"
+    },
+    "publishedAtLabel": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "guestLabel": {
+      "type": "string"
+    },
+    "listenLabel": {
+      "type": "string"
+    },
+    "listenUrl": {
+      "type": "string"
+    },
+    "mediaFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos",
+        "files"
+      ]
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
+

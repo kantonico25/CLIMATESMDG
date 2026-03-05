@@ -1,0 +1,33 @@
+{
+  "name": "climates-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5173",
+    "perf:lighthouse:baseline": "node scripts/lighthouse-median.mjs --runs 3 --update-baseline",
+    "perf:lighthouse:ci": "node scripts/lighthouse-median.mjs --runs 3 --assert"
+  },
+  "dependencies": {
+    "dompurify": "^3.0.6",
+    "gsap": "^3.14.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/dompurify": "^3.0.5",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.23",
+    "lighthouse": "^12.8.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  }
+}

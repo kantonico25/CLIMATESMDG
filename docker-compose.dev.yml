@@ -1,0 +1,79 @@
+﻿services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: climates
+      POSTGRES_USER: climates
+      POSTGRES_PASSWORD: climates
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  strapi:
+    build:
+      context: ./cms
+    command: npm run develop
+    environment:
+      NODE_ENV: development
+      HOST: 0.0.0.0
+      PORT: 1337
+      PUBLIC_URL: http://localhost:1337
+      APP_KEYS: dev,dev,dev,dev
+      API_TOKEN_SALT: dev
+      ADMIN_JWT_SECRET: dev
+      JWT_SECRET: dev
+      TRANSFER_TOKEN_SALT: dev
+      ENCRYPTION_KEY: dev
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: climates
+      DATABASE_USERNAME: climates
+      DATABASE_PASSWORD: climates
+    volumes:
+      - ./cms:/srv/app
+      - strapi_uploads:/srv/app/public/uploads
+    ports:
+      - "1337:1337"
+    depends_on:
+      - postgres
+
+  bff:
+    build:
+      context: ./apps/bff
+    command: npm run dev
+    environment:
+      NODE_ENV: development
+      PORT: 4000
+      STRAPI_URL: http://strapi:1337
+      STRAPI_TOKEN: dev
+      CACHE_TTL_SECONDS: 5
+      CORS_ORIGIN: http://localhost:5173
+    volumes:
+      - ./apps/bff:/app
+    ports:
+      - "4000:4000"
+    depends_on:
+      - strapi
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+  web:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ./apps/web:/app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0 --port 5173"
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE_URL: http://localhost:4000
+
+volumes:
+  pgdata:
+  strapi_uploads:

@@ -1,0 +1,51 @@
+﻿{
+  "collectionName": "components_sections_mission_pillars",
+  "info": {
+    "displayName": "Mission Pillar",
+    "icon": "star"
+  },
+  "attributes": {
+    "iconName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "accentColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    },
+    "popupTitle": {
+      "type": "string"
+    },
+    "popupContent": {
+      "type": "richtext"
+    },
+    "popupTheme": {
+      "type": "enumeration",
+      "enum": [
+        "growth",
+        "horizon",
+        "mosaic",
+        "blueprint",
+        "ripple",
+        "discovery"
+      ]
+    },
+    "popupBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "popupOverlayColor": {
+      "type": "string",
+      "customField": "global::theme-color"
+    }
+  }
+}
+
